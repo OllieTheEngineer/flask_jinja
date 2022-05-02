@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %} Spell Word {% endblock %}
+{% block content %}
+    {% for char in word %}
+        <h1>{{char.upper()}}.</h1>
+    {% endfor %}
+
+{% endblock %}
